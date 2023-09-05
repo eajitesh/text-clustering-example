@@ -4,8 +4,8 @@ from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 
-# Load the data again (Google Collab)
-df = pd.read_csv('/content/customer_complaints_1.csv')
+# Load the data again
+df = pd.read_csv('/customer_complaints_1.csv')
 
 # Create TF-IDF embeddings
 tfidf_vectorizer = TfidfVectorizer(max_df=0.85, max_features=1000, stop_words='english')
